@@ -19,8 +19,20 @@
         `npm install --save @react-navigation/drawer @react-navigation/native expo-app-loading expo-app-loading react-native-gesture-handler react-native-reanimated react-native-screens @expo-google-fonts/inter @expo/vector-icons`
 
 3. Opret en components-mappe 
-4. I mappen oprettes fire js-filer<br/>`Header`<br/>`HomeScreen`<br/>`PlatformScreen`<br/>`ProfileScreen`
-5. Der arbejdes udelukkende med funktionelle komponenter.  
+4. I mappen oprettes fire js-filer<br/>`Header`<br/>`HomeScreen`<br/>`PlatformScreen`<br/>`ProfileScreen`.
+5. Der arbejdes udelukkende med funktionelle komponenter, så husk at omskrive.  
+6. Ydeligere oprettes en mappe, der kades globalStyles, som indeholder js-filen, `GlobalStyles`. <br/>Heri kan der defineres en række styles, som er fælles for alle komponenter - se mappestruktur i bilag B.
+7. I `GlobalStyles` oprettes et StylesSheet; <br/>
+`const GloalStyles = StyleSheet.create({
+    container: {
+        flex: 1,
+        width: '100%'
+    },
+})
+export default GlobalStyles
+`
+7. For at benytte stylingen, skal du importere `Globalstyles` i den aktuelle komponet og referere til den ønskede styling,  som vist følgende;<br/> `<View style=GlobalStyles.container></View>`
+8. Husk på at global styling giver mening for de komponenter, hvor man ønsker et ensartet udtryk. Der vil stadig blive anvendt lokal- & inline styling de steder, hvor de giver mening. 
 
 ## Drawer Navigator - App.js
 Man kan med fordel bruge den officielle dokumentation som inspiration:<br/>https://reactnavigation.org/docs/drawer-based-navigation/
@@ -69,13 +81,19 @@ Denne komponent skal fungere som en fixed header. Headeren skal være et ikon i 
     - Syntaks: `const handleNavigation = ({navigation}) => {}`
 6. Brug nu den prædefinerede metode, `openDrawer()`, som åbner drwaernavigatoren.
 7. Nu skal Headeren importeres i alle komponenter; `HomeScreen`, `PlatformScreen` og `ProfileScreen`.<br/>
-    HUSK at placering- og styling af Headeren skal være lavet korrekt, således at ikonet fremvises øverst i venstre hjørne.
+    HUSK at placering- og styling af Headeren skal være lavet korrekt, således at ikonet fremvises øverst i venstre hjørne.<br/>
     HUSK: at navigation skal overføres til Header komponenten som argument.  
-8.Opgaven er hermed løst. Du skal kunne trykke på ikonet i venstre hjørne. Trykket skal åbne drawer navigatoren og tillade dig at navigere mellem de forskellige screens. 
+    
+8. Opgaven er hermed løst. Du skal kunne trykke på ikonet i venstre hjørne. Trykket skal åbne drawer navigatoren og tillade dig at navigere mellem de forskellige screens. 
 
 ## Bilag
 
 ## Bilag A - Package.json - Fra Endelig Løsning 
 ![img](https://user-images.githubusercontent.com/55731954/128084235-5cc39535-bf44-47f2-9752-8a7e9ba4fe0e.png)
+
+## Bilag B - mappestruktur
+<img width="255" alt="Udklipblabla" src="https://user-images.githubusercontent.com/55731954/128152374-d71ed7b1-7f2d-4acf-900f-20b436f952b6.PNG">
+
+
 
 
