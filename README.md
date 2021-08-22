@@ -22,9 +22,8 @@ https://user-images.githubusercontent.com/48329669/128594345-6bae5a1e-2612-4154-
 
 3. Opret en components-mappe 
 4. I mappen oprettes fire js-filer<br/>`Header`<br/>`HomeScreen`<br/>`PlatformScreen`<br/>`ProfileScreen`.
-5. Der arbejdes udelukkende med funktionelle komponenter, så husk at omskrive.  
-6. Ydeligere oprettes en mappe, der kades globalStyles, som indeholder js-filen, `GlobalStyles`. <br/>Heri kan der defineres en række styles, som er fælles for alle komponenter - se mappestruktur i bilag B.
-7. I `GlobalStyles` oprettes et StylesSheet; <br/>
+5. Ydeligere oprettes en mappe, der kades globalStyles, som indeholder js-filen, `GlobalStyles`. <br/>Heri kan der defineres en række styles, som er fælles for alle komponenter - se mappestruktur i bilag B.
+6. I `GlobalStyles` oprettes et StylesSheet; <br/>
 `const GloalStyles = StyleSheet.create({
     container: {
         flex: 1,
@@ -33,19 +32,19 @@ https://user-images.githubusercontent.com/48329669/128594345-6bae5a1e-2612-4154-
 })
 export default GlobalStyles
 `
-7. For at benytte stylingen, skal du importere `Globalstyles` i den aktuelle komponet og referere til den ønskede styling,  som vist følgende;<br/> `<View style=GlobalStyles.container></View>`
-8. Husk på at global styling giver mening for de komponenter, hvor man ønsker et ensartet udtryk. Der vil stadig blive anvendt lokal- & inline styling de steder, hvor de giver mening. 
+7. For at benytte stylingen, skal du importere `Globalstyles` i den aktuelle komponet, hvorefter denne kan benyttes - se følgende;<br/> `<View style=GlobalStyles.container></View>`
+8. Husk på at global styling giver mening for de komponenter, hvor man ønsker et ensartet udtryk. Der vil stadig blive anvendt lokal- & inline styling de steder, hvor det giver mening. 
 
 ## Drawer Navigator - App.js
 Man kan med fordel bruge den officielle dokumentation som inspiration:<br/>https://reactnavigation.org/docs/drawer-based-navigation/
 
 1. Opret en instans(en const) af createDrawerNavigator() - `const Drawer = createDrawerNavigator()`<br/>HUSK at createDrawerNavigator() skal importeres.
-2. I `return()` oprettes en `<NavigationContainer/>` komponent, der indkapsler `<Drawer.Navigator/>`. 
+2. I `return()` oprettes en `<NavigationContainer/>`, der indkapsler `<Drawer.Navigator/>`. 
 3. Endeligt oprettes tre `<Drawer.Screen/>` 
 4. Importér komponeterne fra components mappen og placer disse i deres respektive `<Drawer.Screen/>`
   - HUSK: referencenavn i `name` og placering af importerede komponenter i `component`
   - Header komponenten skal ikke tages i brug endnu. Den bliver aktuel senere i øvelsen.  
-5. Start din app og naviger mellem Home-, platform,- og profilescreen ved brug af din drawer navigator.
+5. Start din app og naviéer mellem Home-, platform,- og profilescreen ved brug af din drawer navigator.
 
 ## HomeScreen.js
 Denne Screen skal indeholde en knap, som skifter farve og titel ved tryk
@@ -58,8 +57,8 @@ Denne Screen skal indeholde en knap, som skifter farve og titel ved tryk
    - HINT: Anvend en Tenary operator - se eksempel herunder: <br/> https://www.codegrepper.com/code-examples/javascript/ternary+operator+in+style+tag+html
 
 ## PlatformScreen.js
-Denne komponent skal ændre baggrundsfarve ud fra den enhed, som kører app'en 
-I den endelige løsning, vil baggrundsfarven være rød ved anvendelse af en ios-enhed, blå ved anvendelse af en android enhed og grøn, hvis app'en kører i browseren. 
+Denne komponent skal ændre baggrundsfarve ud fra den enhed, som kører appen 
+I den endelige løsning, vil baggrundsfarven være rød ved anvendelse af en ios-enhed, blå ved anvendelse af en android enhed og grøn, hvis appen kører i browseren. 
 
 1. Opret en styling, der definerer baggrundsfarven for komponenten.
 2. Importér `Platform` fra 'react-native' og benyt denne til at skræddersy baggrundsfarven til den pågælende enhed
@@ -69,19 +68,19 @@ I den endelige løsning, vil baggrundsfarven være rød ved anvendelse af en ios
 1. I denne komponent skal der fremvises et vilkårligt billede. Derudover skal der oprettes en knap, ligesom i `HomeScreen`, der kontrollerer skriftstørrelsen og skrifttypen for indholdet af en `<Text><--Indhold-></Text>`, der er placeret lige over knappen. 
 Du kan finde forskellige fonts igennem den dependency, som du installerede i første del af øvelsen. For inspiration se følgende dokumentation: <br/>https://docs.expo.dev/guides/using-custom-fonts/
 
-2. Du bør nu være i stand til at slide Drawer Navigatoren ind fra siden og navigere mellem de forskellige screens. I HomeScreen skal den fremviste knap ændre farve og titel ved tryk. I PlatformScreen skal baggrundsfarven ændrer sig afhængigt enheden. I ProfileScreen skal der være fremvist et billede, hvortil der skal være en knap, som ændrer tekstens skriftstørrelse og teksttype. 
+2. Du bør nu være i stand til at trække Drawer Navigatoren ind fra siden og navigere mellem de forskellige screens. I HomeScreen skal den fremviste knap ændre farve og titel ved tryk. I PlatformScreen skal baggrundsfarven ændrer sig afhængigt enheden. I ProfileScreen skal der være fremvist et billede, hvortil der skal være en knap, som ændrer tekstens skriftstørrelse og teksttype. 
 
 ## Header.js
 Denne komponent skal fungere som en fixed header. Headeren skal være et ikon i venstre hjørne, som ved tryk trækker Drawer Navigatoren ud. 
 
 1. I `return()` skal der oprettes en `<TouchableOpacity/>` komponent. 
 2. Header komponenten skal tage props med som argument. 
-3. Find det ikon, du vil have fremvist som fast header<br/>Liste med ikoner kan findes her: https://icons.expo.fyi/
+3. Find dét ikon som skal indgå i din header og benyttes til at åbne drawer navigatoren<br/>Liste med ikoner kan findes her: https://icons.expo.fyi/
 4. Placer ikonet i `<TouchableOpacity/>`
 5. `<TouchableOpacity/>` skal i `onPress` aktivere en metode, som åbner Drawer Navigatore. Find hjælp i dokumentationen, som blev nævnt i afsnittet om "Drawer Navigator - App.js". 
     - Opret metoden `handleNavigation` og overfør `navigation` som argument til metoden.
     - Syntaks: `const handleNavigation = ({navigation}) => {}`
-6. Brug nu den prædefinerede metode, `openDrawer()`, som åbner drwaernavigatoren.
+6. Brug nu den prædefinerede metode, `openDrawer()`, som åbner drawernavigatoren.
 7. Nu skal Headeren importeres i alle komponenter; `HomeScreen`, `PlatformScreen` og `ProfileScreen`.<br/>
     HUSK at placering- og styling af Headeren skal være lavet korrekt, således at ikonet fremvises øverst i venstre hjørne.<br/>
     HUSK: at navigation skal overføres til Header komponenten som argument.  
