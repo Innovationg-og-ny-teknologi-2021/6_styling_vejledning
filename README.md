@@ -18,7 +18,7 @@ https://user-images.githubusercontent.com/48329669/128594345-6bae5a1e-2612-4154-
      - @expo-google-fonts/inter
      - @expo/vector-icons<br/> Et skærmklip af package.json filen til den endelige løsning er vedlagt i bilag A. Din package.json bør være ens med denne efter installeringen         <br/>KOPIER linjen herunder til installering.
 
-        `npm install --save @react-navigation/drawer @react-navigation/native expo-app-loading expo-app-loading react-native-gesture-handler react-native-reanimated react-native-screens @expo-google-fonts/inter @expo/vector-icons`
+        `expo install --save @react-navigation/drawer @react-navigation/native expo-app-loading expo-app-loading react-native-gesture-handler react-native-reanimated react-native-screens @expo-google-fonts/inter @expo/vector-icons`
 
 3. Opret en components-mappe 
 4. I mappen oprettes fire js-filer<br/>`Header`<br/>`HomeScreen`<br/>`PlatformScreen`<br/>`ProfileScreen`.
