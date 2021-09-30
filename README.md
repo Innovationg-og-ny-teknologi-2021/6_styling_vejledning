@@ -22,7 +22,7 @@ https://user-images.githubusercontent.com/48329669/128594345-6bae5a1e-2612-4154-
 
 3. Opret en components-mappe 
 4. I mappen oprettes fire js-filer<br/>`Header`<br/>`HomeScreen`<br/>`PlatformScreen`<br/>`ProfileScreen`.
-5. Ydeligere oprettes en mappe, der kades globalStyles, som indeholder js-filen, `GlobalStyles`. <br/>Heri kan der defineres en række styles, som er fælles for alle komponenter - se mappestruktur i bilag B.
+5. Ydeligere oprettes en mappe, der kades globalStyles, som indeholder js-filen, `GlobalStyles`. <br/>Heri kan der defineres en række styles, som er fælles for alle komponenter. Denne mappe skal IKKE ligge i components mappen, men være en isoleret mappe ligesom components mappen - se mappestruktur i bilag B.
 6. I `GlobalStyles` oprettes et StylesSheet; <br/>
 `const GloalStyles = StyleSheet.create({
     container: {
