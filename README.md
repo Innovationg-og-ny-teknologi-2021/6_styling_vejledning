@@ -40,11 +40,11 @@ Man kan med fordel bruge den officielle dokumentation som inspiration:<br/>https
 
 1. Opret en instans(en const) af createDrawerNavigator() - `const Drawer = createDrawerNavigator()`<br/>HUSK at createDrawerNavigator() skal importeres.
 2. I `return()` oprettes en `<NavigationContainer/>`, der indkapsler `<Drawer.Navigator/>`. 
-3. Endeligt oprettes tre `<Drawer.Screen/>` 
+3. Endeligt oprettes tre `<Drawer.Screen/>` komponenter. 
 4. Importér komponeterne fra components mappen og placer disse i deres respektive `<Drawer.Screen/>`
   - HUSK: referencenavn i `name` og placering af importerede komponenter i `component`
   - Header komponenten skal ikke tages i brug endnu. Den bliver aktuel senere i øvelsen.  
-5. Start din app og naviéer mellem Home-, platform,- og profilescreen ved brug af din drawer navigator.
+5. Start din app og navigér mellem Home-, platform,- og profilescreen ved brug af din drawer navigator.
 
 ## HomeScreen.js
 Denne Screen skal indeholde en knap, som skifter farve og titel ved tryk
