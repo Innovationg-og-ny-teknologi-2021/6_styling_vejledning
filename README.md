@@ -51,9 +51,10 @@ Denne Screen skal indeholde en knap, som skifter farve og titel ved tryk
 
 1. Opret to state variabler ved brug af `useState`<br/>HUSK at importere `useState`
 - Variabel 1: Skal registrere knappens aktuelle tilstand - boolean(true/false).
+- HINT: `const [clicked, setClicked] = useState(false)`
 - Variabel 2: Skal dynamisk ændre knappens titel
 2. Opret en en button komponent, som i onPress aktiverer en metode, der sætter knappens titel på baggrund af knappens tilstand.
-3. Opret nu en styling, som på baggrund af knapvaraiblens tilstand ændrer farve
+3. Opret nu en styling, som på baggrund af knapvariablens tilstand ændrer farve
    - HINT: Anvend en Tenary operator - se eksempel herunder: <br/> https://www.codegrepper.com/code-examples/javascript/ternary+operator+in+style+tag+html
 
 ## PlatformScreen.js
