@@ -52,9 +52,10 @@ Denne Screen skal indeholde en knap, som skifter farve og titel ved tryk
 1. Opret én state variabel ved brug af `useState`<br/>HUSK at importere `useState`
 - Variabel 1: Skal registrere knappens aktuelle tilstand - boolean(true/false).
 - HINT: `const [clicked, setClicked] = useState(false)`
-2. Opret en en button komponent, som i onPress aktiverer en metode, der sætter knappens titel på baggrund af knappens tilstand.
+2. Opret en en TouchableOpacity komponent, som i onPress aktiverer en metode, der ændrer knappens tilstand ved tryk. For eksempel, Hvis knappen aktuelt holder tilstanden false, skal metoden sikre at knappens tilstand bliver true og omvendt.
 3. Opret nu en styling, som på baggrund af knapvariablens tilstand ændrer farve
    - HINT: Anvend en Tenary operator - se eksempel herunder: <br/> https://www.codegrepper.com/code-examples/javascript/ternary+operator+in+style+tag+html
+4. TouchableOpacity skal wrappe et Text element, hvis værdi skal ændre sig afhængigt clicked-variablens tilstand(nøjagtig som farven).
 
 ## PlatformScreen.js
 Denne komponent skal ændre baggrundsfarve ud fra den enhed, som kører appen 
@@ -68,20 +69,20 @@ I den endelige løsning, vil baggrundsfarven være rød ved anvendelse af en ios
 1. I denne komponent skal der fremvises et vilkårligt billede. Derudover skal der oprettes en knap, ligesom i `HomeScreen`, der kontrollerer skriftstørrelsen og skrifttypen for indholdet af en `<Text><--Indhold-></Text>`, der er placeret lige over knappen. 
 Du kan finde forskellige fonts igennem den dependency, som du installerede i første del af øvelsen. For inspiration se følgende dokumentation: <br/>https://docs.expo.dev/guides/using-custom-fonts/
 
-2. Du bør nu være i stand til at trække Drawer Navigatoren ind fra siden og navigere mellem de forskellige screens. I HomeScreen skal den fremviste knap ændre farve og titel ved tryk. I PlatformScreen skal baggrundsfarven ændrer sig afhængigt enheden. I ProfileScreen skal der være fremvist et billede, hvortil der skal være en knap, som ændrer tekstens skriftstørrelse og teksttype. 
+2. Du bør nu være i stand til at trække Drawer Navigatoren ind fra siden og navigere mellem de forskellige screens. I HomeScreen skal den fremviste knap ændre farve og tekstindhold ved tryk. I PlatformScreen skal baggrundsfarven ændre sig afhængigt af enheden. I ProfileScreen skal der være fremvist et billede, hvortil der skal være en knap, som ændrer tekstens skriftstørrelse og teksttype. 
 
 ## Header.js
 Denne komponent skal fungere som en fixed header. Headeren skal være et ikon i venstre hjørne, som ved tryk trækker Drawer Navigatoren ud. 
 
 1. I `return()` skal der oprettes en `<TouchableOpacity/>` komponent. 
-2. Header komponenten skal tage props med som argument. 
+2. Header komponenten skal tage props med som argument(i paramtesen, `Header(props)`). 
 3. Find dét ikon som skal indgå i din header og benyttes til at åbne drawer navigatoren<br/>Liste med ikoner kan findes her: https://icons.expo.fyi/
 4. Placer ikonet i `<TouchableOpacity/>`
-5. `<TouchableOpacity/>` skal i `onPress` aktivere en metode, som åbner Drawer Navigatore. Find hjælp i dokumentationen, som blev nævnt i afsnittet om "Drawer Navigator - App.js". 
-    - Opret metoden `handleNavigation` og overfør `navigation` som argument til metoden.
+5. `<TouchableOpacity/>` skal i `onPress` aktivere en metode, som åbner Drawer Navigatoren. Find hjælp i dokumentationen, som blev nævnt i afsnittet om "Drawer Navigator - App.js". 
+    - Opret metoden `handleNavigation` og overfør `props.navigation` som argument til metoden.
     - Syntaks: `const handleNavigation = ({navigation}) => {}`
 6. Brug nu den prædefinerede metode, `openDrawer()`, som åbner drawernavigatoren.
-7. Nu skal Headeren importeres i alle komponenter; `HomeScreen`, `PlatformScreen` og `ProfileScreen`.<br/>
+7. Afslutningsvis, skal Headeren importeres i alle komponenter; `HomeScreen`, `PlatformScreen` og `ProfileScreen`.<br/>
     HUSK at placering- og styling af Headeren skal være lavet korrekt, således at ikonet fremvises øverst i venstre hjørne.<br/>
     HUSK: at navigation skal overføres til Header komponenten som argument.  
     
