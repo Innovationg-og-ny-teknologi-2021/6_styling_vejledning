@@ -43,7 +43,6 @@ Man kan med fordel bruge den officielle dokumentation som inspiration:<br/>https
 3. Endeligt oprettes tre `<Drawer.Screen/>` komponenter. 
 4. Importér komponeterne fra components mappen og placer disse i deres respektive `<Drawer.Screen/>`
   - HUSK: referencenavn i `name` og placering af importerede komponenter i `component`
-  - Header komponenten skal ikke tages i brug endnu. Den bliver aktuel senere i øvelsen.  
 5. Start din app og navigér mellem Home-, platform,- og profilescreen ved brug af din drawer navigator.
 
 ## HomeScreen.js
@@ -62,7 +61,7 @@ Denne komponent skal ændre baggrundsfarve ud fra den enhed, som kører appen
 I den endelige løsning, vil baggrundsfarven være rød ved anvendelse af en ios-enhed, blå ved anvendelse af en android enhed og grøn, hvis appen kører i browseren. 
 
 1. Opret en styling, der definerer baggrundsfarven for komponenten.
-2. Importér `Platform` fra 'react-native' og benyt denne til at skræddersy baggrundsfarven til den pågælende enhed
+2. Importér `Platform` fra 'react-native' og benyt denne til at skræddersy baggrundsfarven til den pågældende enhed
     HINT: Se dokumentation her:<br/>https://reactnative.dev/docs/platform-specific-code
 
 ## ProfileScreen.js
