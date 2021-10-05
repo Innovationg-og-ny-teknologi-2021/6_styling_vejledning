@@ -57,7 +57,7 @@ Denne Screen skal indeholde en knap, som skifter farve og titel ved tryk
 4. TouchableOpacity skal wrappe et Text element, hvis værdi skal ændre sig afhængigt clicked-variablens tilstand(nøjagtig som farven).
 
 ## PlatformScreen.js
-Denne komponent skal ændre baggrundsfarve ud fra den enhed, som kører appen 
+Denne komponent skal ændre baggrundsfarve ud fra den enhed, som kører appen på.
 I den endelige løsning, vil baggrundsfarven være rød ved anvendelse af en ios-enhed, blå ved anvendelse af en android enhed og grøn, hvis appen kører i browseren. 
 
 1. Opret en styling, der definerer baggrundsfarven for komponenten.
