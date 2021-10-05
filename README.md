@@ -78,6 +78,6 @@ Du kan finde forskellige fonts igennem den dependency, som du installerede i fø
 ![img](https://user-images.githubusercontent.com/55731954/128084235-5cc39535-bf44-47f2-9752-8a7e9ba4fe0e.png)
 
 ## Bilag B - mappestruktur
-<img width="209" alt="mappestruktur" src="https://user-images.githubusercontent.com/55731954/136088670-f3ba9f91-d257-4677-b12f-a68e1d8f42eb.PNG">
+<img width="350" alt="mappestruktur" src="https://user-images.githubusercontent.com/55731954/136088670-f3ba9f91-d257-4677-b12f-a68e1d8f42eb.PNG">
 
 
