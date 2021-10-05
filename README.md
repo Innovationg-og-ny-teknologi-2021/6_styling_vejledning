@@ -18,10 +18,10 @@ https://user-images.githubusercontent.com/48329669/128594345-6bae5a1e-2612-4154-
      - @expo-google-fonts/inter
      - @expo/vector-icons<br/> Et skærmklip af package.json filen til den endelige løsning er vedlagt i bilag A. Din package.json bør være ens med denne efter installeringen         <br/>KOPIER linjen herunder til installering.
 
-        `expo install --save @react-navigation/drawer @react-navigation/native expo-app-loading expo-app-loading react-native-gesture-handler react-native-reanimated react-native-screens @expo-google-fonts/inter @expo/vector-icons`
+        `expo install @react-navigation/drawer @react-navigation/native expo-app-loading expo-app-loading react-native-gesture-handler react-native-reanimated react-native-screens @expo-google-fonts/inter @expo/vector-icons`
 
 3. Opret en components-mappe 
-4. I mappen oprettes fire js-filer<br/>`Header`<br/>`HomeScreen`<br/>`PlatformScreen`<br/>`ProfileScreen`.
+4. I mappen oprettes fire js-filer<br/>`HomeScreen`<br/>`PlatformScreen`<br/>`ProfileScreen`.
 5. Ydeligere oprettes en mappe, der kades globalStyles, som indeholder js-filen, `GlobalStyles`. <br/>Heri kan der defineres en række styles, som er fælles for alle komponenter. Denne mappe skal IKKE ligge i components mappen, men være en isoleret mappe ligesom components mappen - se mappestruktur i bilag B.
 6. I `GlobalStyles` oprettes et StylesSheet; <br/>
 `const GloalStyles = StyleSheet.create({
@@ -70,21 +70,6 @@ Du kan finde forskellige fonts igennem den dependency, som du installerede i fø
 
 2. Du bør nu være i stand til at trække Drawer Navigatoren ind fra siden og navigere mellem de forskellige screens. I HomeScreen skal den fremviste knap ændre farve og tekstindhold ved tryk. I PlatformScreen skal baggrundsfarven ændre sig afhængigt af enheden. I ProfileScreen skal der være fremvist et billede, hvortil der skal være en knap, som ændrer tekstens skriftstørrelse og teksttype. 
 
-## Header.js
-Denne komponent skal fungere som en fixed header. Headeren skal være et ikon i venstre hjørne, som ved tryk trækker Drawer Navigatoren ud. 
-
-1. I `return()` skal der oprettes en `<TouchableOpacity/>` komponent. 
-2. Header komponenten skal tage props med som argument(i paramtesen, `Header(props)`). 
-3. Find dét ikon som skal indgå i din header og benyttes til at åbne drawer navigatoren<br/>Liste med ikoner kan findes her: https://icons.expo.fyi/
-4. Placer ikonet i `<TouchableOpacity/>`
-5. `<TouchableOpacity/>` skal i `onPress` aktivere en metode, som åbner Drawer Navigatoren. Find hjælp i dokumentationen, som blev nævnt i afsnittet om "Drawer Navigator - App.js". 
-    - Opret metoden `handleNavigation` og overfør `props.navigation` som argument til metoden.
-    - Syntaks: `const handleNavigation = ({navigation}) => {}`
-6. Brug nu den prædefinerede metode, `openDrawer()`, som åbner drawernavigatoren.
-7. Afslutningsvis, skal Headeren importeres i alle komponenter; `HomeScreen`, `PlatformScreen` og `ProfileScreen`.<br/>
-    HUSK at placering- og styling af Headeren skal være lavet korrekt, således at ikonet fremvises øverst i venstre hjørne.<br/>
-    HUSK: at navigation skal overføres til Header komponenten som argument.  
-    
 8. Opgaven er hermed løst. Du skal kunne trykke på ikonet i venstre hjørne. Trykket skal åbne drawer navigatoren og tillade dig at navigere mellem de forskellige screens. 
 
 ## Bilag
