@@ -21,7 +21,7 @@ https://user-images.githubusercontent.com/48329669/128594345-6bae5a1e-2612-4154-
         `expo install @react-navigation/drawer @react-navigation/native expo-app-loading expo-app-loading react-native-gesture-handler react-native-reanimated react-native-screens @expo-google-fonts/inter @expo/vector-icons`
 
 3. Opret en components-mappe 
-4. I mappen oprettes fire js-filer<br/>`HomeScreen`<br/>`PlatformScreen`<br/>`ProfileScreen`.
+4. I mappen oprettes tre js-filer<br/>`HomeScreen`<br/>`PlatformScreen`<br/>`ProfileScreen`.
 5. Ydeligere oprettes en mappe, der kades globalStyles, som indeholder js-filen, `GlobalStyles`. <br/>Heri kan der defineres en række styles, som er fælles for alle komponenter. Denne mappe skal IKKE ligge i components mappen, men være en isoleret mappe ligesom components mappen - se mappestruktur i bilag B.
 6. I `GlobalStyles` oprettes et StylesSheet; <br/>
 `const GloalStyles = StyleSheet.create({
