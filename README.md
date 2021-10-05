@@ -51,7 +51,7 @@ Denne Screen skal indeholde en knap, som skifter farve og titel ved tryk
 1. Opret én state variabel ved brug af `useState`<br/>HUSK at importere `useState`
 - Variabel 1: Skal registrere knappens aktuelle tilstand - boolean(true/false).
 - HINT: `const [clicked, setClicked] = useState(false)`
-2. Opret en en TouchableOpacity komponent, som i onPress aktiverer en metode, der ændrer knappens tilstand ved tryk. For eksempel, Hvis knappen aktuelt holder tilstanden false, skal metoden sikre at knappens tilstand bliver true og omvendt.
+2. Opret en en TouchableOpacity komponent, som i onPress aktiverer en metode, der ændrer knappens tilstand ved tryk. For eksempel, hvis knappen aktuelt holder tilstanden false, skal metoden sikre at knappens tilstand bliver true og omvendt.
 3. Opret nu en styling, som på baggrund af knapvariablens tilstand ændrer farve
    - HINT: Anvend en Tenary operator - se eksempel herunder: <br/> https://www.codegrepper.com/code-examples/javascript/ternary+operator+in+style+tag+html
 4. TouchableOpacity skal wrappe et Text element, hvis værdi skal ændre sig afhængigt clicked-variablens tilstand(nøjagtig som farven).
