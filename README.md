@@ -32,7 +32,7 @@ https://user-images.githubusercontent.com/48329669/128594345-6bae5a1e-2612-4154-
 })
 export default GlobalStyles
 `
-7. For at benytte stylingen, skal du importere `Globalstyles` i den aktuelle komponet, hvorefter denne kan benyttes - se følgende;<br/> `<View style=GlobalStyles.container></View>`
+7. For at benytte stylingen, skal du importere `Globalstyles` i den aktuelle komponet, hvorefter denne kan benyttes - se følgende;<br/> `<View style={GlobalStyles.container}></View>`
 8. Husk på at global styling giver mening for de komponenter, hvor man ønsker et ensartet udtryk. Der vil stadig blive anvendt lokal- & inline styling de steder, hvor det giver mening. 
 
 ## Drawer Navigator - App.js
