@@ -44,6 +44,7 @@ Man kan med fordel bruge den officielle dokumentation som inspiration:<br/>https
 4. Importér komponeterne fra components mappen og placer disse i deres respektive `<Drawer.Screen/>`
   - HUSK: referencenavn i `name` og placering af importerede komponenter i `component`
 5. Start din app og navigér mellem Home-, platform,- og profilescreen ved brug af din drawer navigator.
+6. HVIS DU HAR FEJL " tried to register two views with the same name" : SÅ INSTALLER SAFE AREA CONTEXT `expo install react-native-safe-area-context`
 
 ## HomeScreen.js
 Denne Screen skal indeholde en knap, som skifter farve og titel ved tryk
