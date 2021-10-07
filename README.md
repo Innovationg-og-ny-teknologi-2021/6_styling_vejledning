@@ -82,25 +82,3 @@ Du kan finde forskellige fonts igennem den dependency, som du installerede i fø
 <img width="350" alt="mappestruktur" src="https://user-images.githubusercontent.com/55731954/136088670-f3ba9f91-d257-4677-b12f-a68e1d8f42eb.PNG">
 
 
-
-  "dependencies": {
-    "@expo-google-fonts/inter": "^0.2.0",
-    "@expo/vector-icons": "^12.0.0",
-    "@react-navigation/drawer": "^6.1.6",
-    "expo": "~42.0.1",
-    "expo-app-loading": "^1.1.2",
-    "expo-status-bar": "~1.0.4",
-    "react": "16.13.1",
-    "react-dom": "16.13.1",
-    "react-native": "https://github.com/expo/react-native/archive/sdk-42.0.0.tar.gz",
-    "react-native-gesture-handler": "~1.10.2",
-    "react-native-reanimated": "~2.2.0",
-    "react-native-screens": "~3.4.0",
-    "react-native-web": "~0.13.12"
-  }
-
-
-
-
-
-
