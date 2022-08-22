@@ -24,7 +24,7 @@ https://user-images.githubusercontent.com/48329669/128594345-6bae5a1e-2612-4154-
 4. I mappen oprettes tre js-filer<br/>`HomeScreen`<br/>`PlatformScreen`<br/>`ProfileScreen`.
 5. Ydeligere oprettes en mappe, der kades globalStyles, som indeholder js-filen, `GlobalStyles`. <br/>Heri kan der defineres en række styles, som er fælles for alle komponenter. Denne mappe skal IKKE ligge i components mappen, men være en isoleret mappe ligesom components mappen - se mappestruktur i bilag B.
 6. I `GlobalStyles` oprettes et StylesSheet; <br/>
-`const GloalStyles = StyleSheet.create({
+`const GlobalStyles = StyleSheet.create({
     container: {
         flex: 1,
         width: '100%'
@@ -58,7 +58,7 @@ Denne Screen skal indeholde en knap, som skifter farve og titel ved tryk
 4. TouchableOpacity skal wrappe et Text element, hvis værdi skal ændre sig afhængigt clicked-variablens tilstand(nøjagtig som farven).
 
 ## PlatformScreen.js
-Denne komponent skal ændre baggrundsfarve ud fra den enhed, som kører appen på.
+Denne komponent skal ændre baggrundsfarve ud fra den enhed, som appen kører på.
 I den endelige løsning, vil baggrundsfarven være rød ved anvendelse af en ios-enhed, blå ved anvendelse af en android enhed og grøn, hvis appen kører i browseren. 
 
 1. Opret en styling, der definerer baggrundsfarven for komponenten.
