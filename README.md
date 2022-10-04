@@ -36,8 +36,8 @@ export default GlobalStyles
 8. Husk på at global styling giver mening for de komponenter, hvor man ønsker et ensartet udtryk. Der vil stadig blive anvendt lokal- & inline styling de steder, hvor det giver mening. 
 
 ## Drawer Navigator - App.js
-OBS: der er sket ændringer i React Native, så det kan være nødvendigt for jer, at indsætte følgende kode i Drawer.Navigator: <Drawer.Navigator useLegacyImplementation={true}>
-Ændringen kræver også, at du indsætter følgende i din babel.config: plugins: ['react-native-reanminated/plugin']
+OBS: der er sket ændringer i React Native, så det kan være nødvendigt for jer, at indsætte følgende kode i Drawer.Navigator: `<Drawer.Navigator useLegacyImplementation={true}>`<br/>
+Ændringen kræver også, at du indsætter følgende i din babel.config: `plugins: ['react-native-reanminated/plugin']
 Man kan med fordel bruge den officielle dokumentation som inspiration:<br/>https://reactnavigation.org/docs/drawer-based-navigation/
 
 1. Opret en instans(en const) af createDrawerNavigator() - `const Drawer = createDrawerNavigator()`<br/>HUSK at createDrawerNavigator() skal importeres.
