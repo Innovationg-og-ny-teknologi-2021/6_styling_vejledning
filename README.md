@@ -73,6 +73,12 @@ Du kan finde forskellige fonts igennem den dependency, som du installerede i fø
 
 8. Opgaven er hermed løst. Du skal kunne trykke på ikonet i venstre hjørne. Trykket skal åbne drawer navigatoren og tillade dig at navigere mellem de forskellige screens. 
 
+## Nice link
+
+https://coolors.co/
+
+Heri kan I danne super nice farve kombinationer som gør jer applikation virkelig lækker at se på!
+
 ## Bilag
 
 ## Bilag A - Package.json - Fra Endelig Løsning 
