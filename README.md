@@ -37,7 +37,7 @@ export default GlobalStyles
 
 ## Drawer Navigator - App.js
 OBS: der er sket ændringer i React Native, så det kan være nødvendigt for jer, at indsætte følgende kode i Drawer.Navigator: `<Drawer.Navigator useLegacyImplementation={true}>`<br/>
-Ændringen kræver også, at du indsætter følgende i din babel.config: `plugins: ['react-native-reanminated/plugin']
+Ændringen kræver også, at du indsætter følgende i din babel.config: `plugins: ['react-native-reanminated/plugin']`
 Man kan med fordel bruge den officielle dokumentation som inspiration:<br/>https://reactnavigation.org/docs/drawer-based-navigation/
 
 1. Opret en instans(en const) af createDrawerNavigator() - `const Drawer = createDrawerNavigator()`<br/>HUSK at createDrawerNavigator() skal importeres.
