@@ -48,6 +48,11 @@ Man kan med fordel bruge den officielle dokumentation som inspiration:<br/>https
 5. Start din app og navigér mellem Home-, platform,- og profilescreen ved brug af din drawer navigator.
 6. HVIS DU HAR FEJL " tried to register two views with the same name" : SÅ INSTALLER SAFE AREA CONTEXT `expo install react-native-safe-area-context`
 
+## Til Mac brugere:
+
+Hvis i oplever fejl ved pga. Drawer Navigation, kan en løsning være at køre nedenstående kommando ind i starter appen:<br>
+```npx pod-install ios```
+
 ## HomeScreen.js
 Denne Screen skal indeholde en knap, som skifter farve og titel ved tryk
 
@@ -55,6 +60,11 @@ Denne Screen skal indeholde en knap, som skifter farve og titel ved tryk
 - Variabel 1: Skal registrere knappens aktuelle tilstand - boolean(true/false).
 - HINT: `const [clicked, setClicked] = useState(false)`
 2. Opret en en TouchableOpacity komponent, som i onPress aktiverer en metode, der ændrer knappens tilstand ved tryk. For eksempel, hvis knappen aktuelt holder tilstanden false, skal metoden sikre at knappens tilstand bliver true og omvendt.
+- Læs dokumentation om knapper hvis i skal bruge inspi: https://reactnative.dev/docs/button
+- HINT: ``` <TouchableOpacity
+                    style={[GlobalStyles.btn, clicked ? GlobalStyles.color : GlobalStyles.color]}
+                    onPress={() => setClicked(!clicked)} >
+                </TouchableOpacity> ```
 3. Opret nu en styling, som på baggrund af knapvariablens tilstand ændrer farve
    - HINT: Anvend en Tenary operator - se eksempel herunder: <br/> https://www.codegrepper.com/code-examples/javascript/ternary+operator+in+style+tag+html
 4. TouchableOpacity skal wrappe et Text element, hvis værdi skal ændre sig afhængigt clicked-variablens tilstand(nøjagtig som farven).
